@@ -1,9 +1,19 @@
+<template name="layout">  
+  <div class="container">    
+      {{> header}}    
+    <div id="main">      
+        {{> yield}}    
+    </div>  
+  </div>
+</template>
+
+
+<!-- Usado para el ejemplo: modificacíon de sesión
 <template name="layout">
   <div class="container">
     <header class="navbar navbar-default" role="navigation"> 
       <div class="navbar-header">
-        <a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope</a>
-        <!--<a class="navbar-brand" href="{{pathFor 'postsList'}}">{{pageTitle}}</a>-->
+        <a class="navbar-brand" href="{{pathFor 'postsList'}}">{{pageTitle}}</a>
       </div>
     </header>
     <div id="main">
@@ -11,3 +21,4 @@
     </div>
   </div>
 </template>
+-->
