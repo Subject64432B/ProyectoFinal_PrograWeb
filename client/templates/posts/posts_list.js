@@ -12,8 +12,17 @@ var postsData = [
     url: 'http://themeteorbook.com'
   }
 ];
+
 Template.postsList.helpers({
    posts: function() {    
     return Posts.find();  
   }
 });
+
+
+/*Seleccionar un subconjunto de datos
+Template.posts.helpers({
+  posts: function(){
+    return Posts.find({author: 'jim', category: 'JavaScript'});
+  }
+});*/
