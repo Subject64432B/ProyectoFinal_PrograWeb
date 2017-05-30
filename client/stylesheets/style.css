@@ -149,6 +149,7 @@ body {
   pointer-events: none;
 }
 .alert {
+   animation: fadeOut 2700ms ease-in 0s 1 forwards;
           animation: fadeOut 2700ms ease-in 0s 1 forwards;
   -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
      -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
