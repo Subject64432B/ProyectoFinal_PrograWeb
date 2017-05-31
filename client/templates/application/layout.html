@@ -1,7 +1,7 @@
 <template name="layout">
   <div class="container">
     {{> header}}
-    {{> errors}}
+    {{> meteorErrors}}
     <div id="main">
       {{> yield}}
     </div>
@@ -12,7 +12,7 @@
 <!-- Usado para el ejemplo: modificacíon de sesión
 <template name="layout">
   <div class="container">
-    <header class="navbar navbar-default" role="navigation"> 
+    <header class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
         <a class="navbar-brand" href="{{pathFor 'postsList'}}">{{pageTitle}}</a>
       </div>
