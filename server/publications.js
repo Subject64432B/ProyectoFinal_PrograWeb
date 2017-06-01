@@ -8,7 +8,7 @@ Meteor.publish('comments', function(postId) {
 });
 
 Meteor.publish('notifications', function() {
-    return Notifications.find({userId: this.userId, read: false});
+  return Notifications.find({userId: this.userId, read: false});
 });
 
 /* Publicar los datos a los que el cliente actual puede tener acceso
