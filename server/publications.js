@@ -2,8 +2,9 @@ Meteor.publish('posts', function() {
   return Posts.find();
 });
 
-Meteor.publish('comments', function() {
-  return Comments.find();
+Meteor.publish('comments', function(postId) {
+  check(postId, String);
+  return Comments.find({postId: postId});
 });
 
 /* Publicar los datos a los que el cliente actual puede tener acceso
