@@ -68,6 +68,9 @@ if (Posts.find().count() === 0) {
       userId: sacha._id,
       url: 'http://google.com/?q=test-' + i,
       submitted: new Date(now - i * 3600 * 1000),
-      commentsCount: 0    });
-    }
+      commentsCount: 0,
+      upvoters: [],
+      votes: 0
+    });
+  }
 }
